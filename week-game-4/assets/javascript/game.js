@@ -5,10 +5,10 @@ $( document ).ready(function(){
   $('#randomNumber').text(Random);
   // Appending random number to the randomNumber id in the html doc
   //
-  var num1= Math.floor(Math.random()*11+1)
-  var num2= Math.floor(Math.random()*11+1)
-  var num3= Math.floor(Math.random()*11+1)
-  var num4= Math.floor(Math.random()*11+1)
+  var one= Math.floor(Math.random()*11+1)
+  var two= Math.floor(Math.random()*11+1)
+  var three= Math.floor(Math.random()*11+1)
+  var four= Math.floor(Math.random()*11+1)
   // Setting up random numbers for each jewel
   // Random number has to be between 1 - 12
   // 
@@ -46,7 +46,7 @@ alert ("You lose!");
 }
 //sets up click for jewels
   $('#one').on ('click', function(){
-    userTotal = userTotal + num1;
+    userTotal = userTotal + one;
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').text(userTotal); 
           //sets win/lose conditions
@@ -58,7 +58,7 @@ alert ("You lose!");
         }   
   })  
   $('#two').on ('click', function(){
-    userTotal = userTotal + num2;
+    userTotal = userTotal + two;
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').text(userTotal); 
         if (userTotal == Random){
@@ -69,7 +69,7 @@ alert ("You lose!");
         } 
   })  
   $('#three').on ('click', function(){
-    userTotal = userTotal + num3;
+    userTotal = userTotal + three;
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').text(userTotal);
 //sets win/lose conditions
@@ -81,7 +81,7 @@ alert ("You lose!");
         } 
   })  
   $('#four').on ('click', function(){
-    userTotal = userTotal + num4;
+    userTotal = userTotal + four;
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').text(userTotal); 
       
